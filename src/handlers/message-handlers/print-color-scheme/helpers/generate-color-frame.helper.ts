@@ -1,4 +1,4 @@
-import {ColorSchemeColor} from '../types/color-scheme-color.type';
+import {ColorSchemeColor} from '../../../../types/color-scheme-color.type';
 
 export const generateColorFrame = (color: ColorSchemeColor) => {
 	const colorFrame = figma.createFrame();

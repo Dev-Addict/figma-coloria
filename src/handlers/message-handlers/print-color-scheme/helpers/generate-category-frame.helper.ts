@@ -1,5 +1,5 @@
-import {generateColorFrame} from './generate-color-frame.util';
-import {ColorSchemeCategory} from '../types/color-scheme-category.type';
+import {generateColorFrame} from './generate-color-frame.helper';
+import {ColorSchemeCategory} from '../../../../types/color-scheme-category.type';
 
 export const generateCategoryFrame = (
 	category: ColorSchemeCategory,

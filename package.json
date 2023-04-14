@@ -2,23 +2,45 @@
   "name": "coloria",
   "version": "1.0.0",
   "description": "Coloria is a Figma plugin with set of tools to help you with colors in Figma.",
-  "main": "code.js",
+  "main": "src/main.ts",
   "scripts": {
-    "build": "webpack",
-    "watch": "npm run build -- --watch"
+    "build": "webpack --mode=production",
+    "dev": "webpack --mode=development --watch"
   },
   "author": "",
   "license": "",
   "devDependencies": {
     "@figma/plugin-typings": "*",
     "@types/chroma-js": "^2.4.0",
+    "@types/react": "^18.0.35",
+    "@types/react-dom": "^18.0.11",
+    "@types/styled-components": "^5.1.26",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
     "prettier": "^2.8.7",
+    "react-dev-utils": "^12.0.1",
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.4",
+    "url-loader": "^4.1.1",
     "webpack": "^5.79.0",
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "chroma-js": "^2.4.2"
+    "chroma-js": "^2.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.9"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
   }
 }

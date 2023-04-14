@@ -3,9 +3,11 @@
   "id": "1228230233391012934",
   "api": "1.0.0",
   "main": "dist/main.js",
+  "ui": "dist/index.html",
   "capabilities": [],
   "enableProposedApi": false,
   "editorType": [
-    "figma"
+    "figma",
+    "figjam"
   ]
 }

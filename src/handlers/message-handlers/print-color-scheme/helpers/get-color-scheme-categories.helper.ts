@@ -1,7 +1,7 @@
 import * as chroma from 'chroma-js';
 
-import {ColorSchemeCategories} from '../types/color-scheme-categories.type';
-import {ColorSchemeColor} from '../types/color-scheme-color.type';
+import {ColorSchemeCategories} from '../../../../types/color-scheme-categories.type';
+import {ColorSchemeColor} from '../../../../types/color-scheme-color.type';
 
 export const getColorSchemeCategories = () => {
 	let isLimitsNotified = false;

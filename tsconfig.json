@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es6",
     "lib": [
+      "dom",
       "es6"
     ],
     "strict": true,
@@ -10,8 +11,13 @@
       "./node_modules/@figma"
     ],
     "outDir": "./dist",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "allowJs": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
     "moduleResolution": "node"
   },
   "include": [
